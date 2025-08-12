@@ -1,6 +1,8 @@
 # fmt-eigen
 A header-only formatter function customized for the Eigen library.
 
+This is the original header from https://github.com/RENyunfan/fmt-eigen
+
 ## Why fmt
 
 The `fmt` library offers several advantages over traditional methods of formatting and printing data in C++. In this chapter, we will explore why `fmt` is preferred for these tasks.

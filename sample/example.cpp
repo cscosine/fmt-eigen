@@ -1,5 +1,5 @@
-#include "fmt_eigen.h"
-#include "fmt/color.h"
+#include <fmt-eigen/fmt_eigen.h>
+#include <fmt/color.h>
 
 int main() {
     Eigen::Matrix<double, 2, 2> matrix;
@@ -27,7 +27,5 @@ int main() {
     fmt::print(fg(fmt::color::gold) | fmt::emphasis::blink, "Matrix Transposed:\n{:.4f}\n", transposed);
     fmt::print(fg(fmt::color::steel_blue) | fmt::emphasis::bold, "Matrix Transposed:\n{:.4f}\n", transposed);
 
-
-    getchar();
     return 0;
 }
