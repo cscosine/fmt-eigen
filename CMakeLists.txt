@@ -5,14 +5,8 @@ project(fmt-eigenSol VERSION 1.0.0 LANGUAGES CXX)
 include(csCMake)
 
 cs_initialize_project(fmt-eigenSol
-    # add the default configurations supported by this project
-    DEFAULT_CONFIG Debug
+    # add the default configurations supported by this project, only release
     DEFAULT_CONFIG Release
-    DEFAULT_CONFIG_MAPPED RelWithDebInfo MAPPED_TO "RelWithDebInfo,Release,"
-    # and the custom configurations supported by this project,
-    # specifiying on which base configuration they are based as second value,
-    # e.g. CUSTOM_CONFIG Paranoid Debug
-    CUSTOM_CONFIG Paranoid BASED_ON "Debug,Release," POSTFIX "dp"
 )
 
 # add libs, executables, etc
