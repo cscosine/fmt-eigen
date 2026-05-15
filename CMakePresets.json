@@ -1,11 +1,13 @@
 {
   "version": 10,
   "include": [
-    "${sourceParentDir}/csCMake/presets/msvc2022-x64-workflow-release.json",
-    "${sourceParentDir}/csCMake/presets/msvc2022-x64-LLVM-workflow-release.json",
-    "${sourceParentDir}/csCMake/presets/msvc2026-x64-workflow-release.json",
-    "${sourceParentDir}/csCMake/presets/msvc2026-x64-LLVM-workflow-release.json",
-    "${sourceParentDir}/csCMake/presets/linux-ninja-workflow-release.json",
-    "${sourceParentDir}/csCMake/presets/linux-ninja-multi-config-clang-workflow-release.json"
+    "${sourceParentDir}/csCMake/presets/csv1/csv1-linux-ubuntu24.04-x64-generic-gcc-ninja-ALL.json",
+    "${sourceParentDir}/csCMake/presets/csv1/csv1-linux-ubuntu24.04-x64-generic-gcc-ninjamulticonfig-ALL.json",
+    "${sourceParentDir}/csCMake/presets/csv1/csv1-linux-ubuntu24.04-x64-generic-clang-ninja-ALL.json",
+    "${sourceParentDir}/csCMake/presets/csv1/csv1-linux-ubuntu24.04-x64-generic-clang-ninjamulticonfig-ALL.json",
+    "${sourceParentDir}/csCMake/presets/csv1/csv1-windows-11-x64-generic-msvc-msvc2022-ALL.json",
+    "${sourceParentDir}/csCMake/presets/csv1/csv1-windows-11-x64-generic-msvc-msvc2026-ALL.json",
+    "${sourceParentDir}/csCMake/presets/csv1/csv1-windows-11-x64-generic-msvcclang-msvc2022-ALL.json",
+    "${sourceParentDir}/csCMake/presets/csv1/csv1-windows-11-x64-generic-msvcclang-msvc2026-ALL.json"
   ]
 }
