@@ -1,13 +1,6 @@
 {
   "version": 10,
   "include": [
-    "${sourceParentDir}/csCMake/presets/csv1/csv1-linux-ubuntu24.04-x64-generic-gcc-ninja-ALL.json",
-    "${sourceParentDir}/csCMake/presets/csv1/csv1-linux-ubuntu24.04-x64-generic-gcc-ninjamulticonfig-ALL.json",
-    "${sourceParentDir}/csCMake/presets/csv1/csv1-linux-ubuntu24.04-x64-generic-clang-ninja-ALL.json",
-    "${sourceParentDir}/csCMake/presets/csv1/csv1-linux-ubuntu24.04-x64-generic-clang-ninjamulticonfig-ALL.json",
-    "${sourceParentDir}/csCMake/presets/csv1/csv1-windows-v11-x64-generic-msvc-msvc2022-ALL.json",
-    "${sourceParentDir}/csCMake/presets/csv1/csv1-windows-v11-x64-generic-msvc-msvc2026-ALL.json",
-    "${sourceParentDir}/csCMake/presets/csv1/csv1-windows-v11-x64-generic-msvcclang-msvc2022-ALL.json",
-    "${sourceParentDir}/csCMake/presets/csv1/csv1-windows-v11-x64-generic-msvcclang-msvc2026-ALL.json"
+      "${sourceParentDir}/csCMake/presets/csv1/cs-presets-ALL.json"
   ]
 }
