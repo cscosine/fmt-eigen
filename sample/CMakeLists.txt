@@ -13,6 +13,9 @@ cs_target_link_libraries(fmt-eigenSample
 		fmt-eigen::fmt-eigen
 )
 
-cs_install_target(fmt-eigenSample fmt-eigenSample)
+# note: not installed on purpose - fmt-eigen is a header-only library and the
+# sample is built only to validate the headers, it is not part of the install
+# tree
+# cs_install_target(fmt-eigenSample fmt-eigenSample)
 
 cs_finalize_target(fmt-eigenSample)
