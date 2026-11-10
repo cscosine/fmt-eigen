@@ -17,7 +17,7 @@ cs_target_link_libraries(fmt-eigen
 	INTERFACE
 		Eigen3::Eigen
 		fmt::fmt
-		fmt-eigenSol::fmt-eigenSol_csCMakeBaseInclude
+		fmt-eigen::cscmake_base_include
 )
 
 cs_install_target(fmt-eigen fmt-eigen DEFAULT)

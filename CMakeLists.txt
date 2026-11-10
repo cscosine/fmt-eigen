@@ -4,7 +4,7 @@ project(fmt-eigenSol VERSION 1.0.0 LANGUAGES CXX)
 # add the csCMake system
 include(csCMake)
 
-cs_initialize_project(fmt-eigenSol CXX_STANDARD 17
+cs_initialize_project(NAMESPACE fmt-eigen CXX_STANDARD 17
     # add the default configurations supported by this project, only release
     DEFAULT_CONFIG Release
 )
@@ -14,4 +14,4 @@ add_subdirectory(fmt-eigen)
 add_subdirectory(sample)
 
 # remember to add this at the end of the main cmake file
-cs_finalize_project(fmt-eigen)
+cs_finalize_project()
