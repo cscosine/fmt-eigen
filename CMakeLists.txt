@@ -12,6 +12,3 @@ cs_initialize_project(NAMESPACE fmt-eigen CXX_STANDARD 17
 # add libs, executables, etc
 add_subdirectory(fmt-eigen)
 add_subdirectory(sample)
-
-# remember to add this at the end of the main cmake file
-cs_finalize_project()
