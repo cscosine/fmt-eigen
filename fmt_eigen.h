@@ -34,11 +34,11 @@
 template<typename MatrixType>
 class MatrixFormatter : fmt::formatter<std::string> {
 private:
-    int precision = 6; // Default precision if not specified
+    mutable int precision = 6; // Default precision if not specified
 public:
     // Parse the format string to extract the precision
     template<typename ParseContext>
-    auto parse(ParseContext &ctx) {
+    auto parse(ParseContext &ctx) const {
         auto it = ctx.begin();
         auto end = ctx.end();
         // Check if precision is specified in the format string
@@ -55,19 +55,19 @@ public:
 
     template<typename Scalar, typename FormatContext>
        typename std::enable_if<std::is_floating_point<Scalar>::value>::type
-       format_element(Scalar value, FormatContext &ctx) {
+       format_element(Scalar value, FormatContext &ctx) const {
         fmt::format_to(ctx.out(), "{:.{}f} ", value, precision);
     }
 
     template<typename Scalar, typename FormatContext>
     typename std::enable_if<std::is_integral<Scalar>::value>::type
-    format_element(Scalar value, FormatContext &ctx) {
+    format_element(Scalar value, FormatContext &ctx) const {
         fmt::format_to(ctx.out(), "{:d} ", value);
     }
 
     // Format the matrix with the specified precision
     template<typename FormatContext>
-    auto format(const MatrixType &matrix, FormatContext &ctx) {
+    auto format(const MatrixType &matrix, FormatContext &ctx) const {
         for (int i = 0; i < matrix.rows(); i++) {
             for (int j = 0; j < matrix.cols(); j++) {
                 format_element(matrix(i, j), ctx);
