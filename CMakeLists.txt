@@ -4,9 +4,11 @@ project(fmt-eigenSol VERSION 1.0.0 LANGUAGES CXX)
 # add the csCMake system
 include(csCMake)
 
-cs_initialize_project(NAMESPACE fmt-eigen CXX_STANDARD 17
-    # add the default configurations supported by this project, only release
-    DEFAULT_CONFIG Release
+cs_initialize_project(
+  NAMESPACE fmt-eigen
+  CXX_STANDARD 17
+  # add the default configurations supported by this project, only release
+  DEFAULT_CONFIG Release
 )
 
 # add libs, executables, etc
