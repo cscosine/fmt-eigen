@@ -1,38 +1,16 @@
-cmake_minimum_required(VERSION 3.0)
-project(example)
+cmake_minimum_required(VERSION 3.31)
+project(fmt-eigenSol VERSION 1.0.0 LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 17)
+# add the csCMake system
+include(csCMake)
 
-# use without ROS, and pure fmt
-# first install fmt from https://github.com/fmtlib/fmt
-
-find_package(fmt REQUIRED)
-add_executable(example example.cpp)
-target_link_libraries(example
-        fmt::fmt
+cs_initialize_project(
+  NAMESPACE fmt-eigen
+  CXX_STANDARD 17
+  # add the default configurations supported by this project, only release
+  DEFAULT_CONFIG Release
 )
 
-
-# use with rosfmt
-# first install rosfmt with: sudo apt install ros-noetic-rosfmt
-
-#set(rosfmt_DIR /opt/ros/noetic/share/rosfmt/cmake)
-#find_package(rosfmt REQUIRED)
-#include_directories(${rosfmt_INCLUDE_DIRS})
-#add_executable(example example.cpp)
-#target_link_libraries(example
-#        ${rosfmt_LIBRARIES}
-#)
-
-
-# use with catkin and rosfmt
-# first install rosfmt with: sudo apt install ros-noetic-rosfmt
-# catkin_make
-#find_package(catkin REQUIRED COMPONENTS
-#        roscpp
-#        rosfmt)
-#include_directories(${catkin_INCLUDE_DIRS})
-#add_executable(example example.cpp)
-#target_link_libraries(example
-#        ${catkin_LIBRARIES}
-#)
+# add libs, executables, etc
+add_subdirectory(fmt-eigen)
+add_subdirectory(sample)
