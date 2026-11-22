@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: v1.0.0
+_commit: v1.1.0
 _src_path: /home/sceriani/myWorkspace/cs-project-template
 description: 'fmt formatting of Eigen matrices (header-only): the cscosine copy of
     RENyunfan/fmt-eigen'
